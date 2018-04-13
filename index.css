@@ -1,0 +1,242 @@
+.logo {
+	line-height: 65px;
+}
+.img{
+    margin-left: 22px;
+    margin-right: 22px;
+    top: 8px;
+    position: relative;
+ }
+.sencha-logo {
+    background-color: #35baf6;
+    height: 65px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.x-toolbar-default {
+	padding: 0;
+}
+
+
+
+/*展开时*/
+.x-treelist-item .x-treelist-item-expander {
+    left: 200px;
+    line-height: 45px;
+}
+
+.x-treelist-item {
+	background-color: #404044;
+}
+
+.x-treelist-item-text {
+	color: #fff;
+	font-size: 15px;
+    line-height: 45px;
+}
+
+.x-treelist-item-icon {
+	line-height: 45px;
+}
+
+
+/*收缩时*/
+.x-treelist-item-tool {
+    background-color: #404040;
+    width: 64px;
+    height: 45px;
+
+}
+
+.x-treelist-item-floated > .x-treelist-row {
+    background-color: #404040;
+}
+
+
+
+.trigger {
+    background-image: url('images/trigger.jpg');
+}
+
+.x-treelist-item-selected > .x-treelist-row{
+    background-color: #475360;
+}
+.x-treelist-row-over {
+    background-color: #3c4a57;
+}
+.x-treelist-row-over > * > .x-treelist-item-text {
+    color: #fff;
+}
+
+
+
+.x-window .x-panel-header-default {
+    background-color: #fff;
+}
+.x-window .x-panel-header-title-default {
+    color: #000;
+}
+.wrap {
+    border-top: 1px dashed #cecece;
+}
+
+.wrap1 {
+    border-top: 1px solid #cecece;
+}
+
+.shadow {
+    box-shadow: 0 2px 5px 0 #d0d0d0 !important;
+}
+
+
+.info-card-item {
+    text-align: center;
+    background: #fff;
+    padding: 45px 10px !important;
+    font-size: 24px;
+}
+.info-card-item h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+    margin:0;
+    line-height: 32px;
+}
+.info-card-item div {
+    line-height: 24px;
+}
+.info-card-item span {
+    font-size: 24px;
+    line-height: 24px;
+}
+.info-card-item div {
+    vertical-align: middle;
+}
+
+
+.info-card-item.info-card-large-wrap  h2 {
+    font-size: 38px;
+    line-height: 48px;
+}
+.info-card-item.info-card-large-wrap span.x-fa {
+    padding: 18px 26px;
+    border-radius: 38px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 78px;
+    margin: 15px 0;
+}
+.info-card-item.info-card-large-wrap span.x-fa.fa-shopping-cart {
+    background-color: #00ffff;
+}
+
+.info-card-item.info-card-large-wrap span.x-fa.fa-file-text {
+    background-color: #ffc0cb;
+}
+.info-card-item.info-card-large-wrap .infodiv {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+.info-card-item:before{
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.info-card-item.red:before {
+    background: #ff0000;
+}
+.info-card-item.orange:before {
+    background: #ffa500;
+}
+.info-card-item.yellow:before {
+    background: #ffff00;
+}
+.info-card-item.green:before {
+    background: #008000;
+}
+.info-card-item.blue:before {
+    background: #0000ff;
+}
+.info-card-item.purple:before {
+    background: #800080;
+}
+.info-card-item.pink:before {
+    background: #ffc0cb;
+}
+
+.postion-class{
+    position:relative;
+}
+
+.info-card-item .x-panel-body-default{
+    border: 0;
+}
+
+.widget-top-first-container{
+    background-color: #5fa2dd;
+}
+
+.widget-top-second-container{
+    background-color: #89ab7a;
+}
+
+.widget-bottom-first-container{
+    background-color: #fff;
+}
+
+.widget-top-container-first-img{
+    position: absolute;
+    z-index: 200;
+    margin-top:94px;
+    border: 3px solid #fff;
+    left: 50%;
+    margin-left: -33px;
+    border-radius: 36px;
+}
+
+.widget-name-text{
+    font-family: "Open Sans";
+    font-weight: Bold;
+    font-size: 16px ;
+    line-height:16px;
+}
+
+.widget-bottom-first-container .x-toolbar-default {
+    background-image: none;
+    border: 0;
+    background-color: #fff;
+}
+
+.wizardform .bbar .x-btn.x-btn-pressed.x-btn-default-toolbar-small {
+    background-color: #5fa2dd;
+}
+
+.wizardform .x-btn-default-toolbar-small {
+    background-color: #5fa2dd;
+    border: 0;
+}
+.wizardform .bbar .x-btn-inner-default-toolbar-small {
+    color: #fff;
+}
+.wizardform .bbar .x-btn.x-btn-disabled.x-btn-default-toolbar-small {
+    background-color: #5fa2dd;
+}
+.x-btn.x-btn-disabled.x-btn-default-toolbar-small {
+    background-color: #fff;
+}
+.wizardform .tbar .x-btn-pressed .x-btn-icon-el-default-toolbar-small {
+    color: #579ddb;
+}
+.wizardform .tbar .x-btn-pressed .x-btn-inner-default-toolbar-small {
+    color: #579ddb;
+}
+.wizardform .tbar .x-box-inner {
+    margin-top: 10px;
+}
