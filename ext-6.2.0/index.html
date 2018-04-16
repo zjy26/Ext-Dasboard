@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+	<meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="ext-6.2.0/classic/theme-triton/resources/theme-triton-all-debug.css"/>
+    <script type="text/javascript" src="ext-6.2.0/ext-all-debug.js"></script>
+    <script type="text/javascript" src="ext-6.2.0/theme-triton-debug.js"></script>
+    <script type="text/javascript" src="ext-6.2.0/locale-zh_CN.js"></script>
+    <script type="text/javascript" src="WidgetA.js"></script>
+    <script type="text/javascript" src="WidgetB.js"></script>
+    <script type="text/javascript" src="WidgetC.js"></script>
+    <script type="text/javascript" src="WizardForm.js"></script>
+    <script type="text/javascript" src="WizardFormController.js"></script>
+    <script type="text/javascript" src="HeaderBar.js"></script>
+    <script type="text/javascript" src="TreelistMenu.js"></script>
+    <script type="text/javascript" src="HomePanel.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+
+
+    <script type="text/javascript">
+
+    var WrapContainer = Ext.Container({
+        id: 'wrapcontainer',
+        scrollable: true,
+        layout: {
+            type: 'hbox',
+            flex: 1,
+            align: 'stretchmax',
+            animate: true,
+            animatePolicy: {
+                x: true,
+                width: true
+            }
+        },
+        items: [TreelistMenu,HomePanel]
+    });
+
+
+	Ext.onReady(function(){
+		Ext.create('Ext.panel.Panel',{
+            scrollable: true,
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            },
+            items: [HeaderBar,WrapContainer],
+            renderTo: Ext.getBody()
+        });
+
+	});
+    </script>
+</script>
+</head>
+<body>
+</body>
+</html>
