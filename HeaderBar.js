@@ -54,7 +54,7 @@ var HeaderBar = Ext.create({
                     xtype: 'widget-c',
                     width: 500
                 }]
-            }).show();
+            });
         }
     }, {
         iconCls: 'x-fa fa-edit',
