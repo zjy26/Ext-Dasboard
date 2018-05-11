@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hello</title>
+    <meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="ext-6.2.0/build/classic/theme-crisp/resources/theme-crisp-all.css"/>
+    <link rel="stylesheet" type="text/css" href="ext-6.2.0/build/packages/charts/classic/triton/resources/charts-all-debug.css"/>
+    <link rel="stylesheet" type="text/css" href="ext-6.2.0/build/packages/ux/classic/neptune/resources/ux-all-debug.css"/>
+    <script type="text/javascript" src="ext-6.2.0/build/ext-all.js"></script>
+    <script type="text/javascript" src="ext-6.2.0/build/classic/theme-crisp/theme-crisp.js"></script>
+    <script type="text/javascript" src="ext-6.2.0/build/classic/locale/locale-zh_CN.js"></script>
+    <script type="text/javascript" src="ext-6.2.0/build/packages/charts/classic/charts-debug.js"></script>
+    <script language="javascript" src="ext-6.2.0/build/packages/ux/classic/ux-debug.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+
+Ext.onReady(function() {
+    var drawContainer = Ext.create('Ext.draw.Container', {
+    renderTo: Ext.getBody(),
+    plugins: ['spriteevents'],
+    width:1366,
+    height:620,
+    sprites: [{
+        type: 'image',                           // zIndex
+        src: 'images/test.png'
+    }, {
+        type: 'circle',
+        fillStyle: '#fff',
+        fillOpacity :0.1,
+        name: '东方绿洲',
+        x: 58,
+        y: 140,
+        r: 14
+    }, {
+        type: 'circle',
+        fillStyle: '#fff',
+        fillOpacity :0.1,
+        name: '朱家角停车场',
+        x: 119,
+        y: 140,
+        r: 14
+     }, {
+        type: 'circle',
+        fillStyle: '#fff',
+        fillOpacity :0.1,
+        name: '朱家角',
+        x: 179,
+        y: 140,
+        r: 14
+    }, {
+        type: 'image',
+        src: '',
+        name: '沪青平',
+        x: 225,
+        y: 125,
+        width: 30,
+        height: 30
+    }, {
+        type: 'image',
+        src: '',
+        name: '淀山湖',
+        x: 285,
+        y: 125,
+        width: 30,
+        height: 30
+     }],
+    listeners: {
+        spriteclick: function(item, event) {
+            var sprite = item && item.sprite;
+
+            if(sprite.type === 'circle') {
+                sprite.setAttributes({
+                    fillStyle: '#ff0000',
+                    fillOpacity :0.5,
+                    strokeStyle: 0
+                });
+            }
+
+            if(sprite.type === 'image') {
+                sprite.setAttributes({
+                    src: 'images/draw.jpg',
+                });
+            }
+
+            sprite.getSurface().renderFrame();
+
+        },
+
+        spritedblclick: function(item, event) {
+            Ext.Msg.alert('站点',item.sprite.name);
+        },
+
+        spritemouseout: function(item, event) {
+            var sprite = item && item.sprite;
+
+                sprite.setAttributes({
+                    fillStyle: '#fff',
+                    fillOpacity :0.1,
+                    strokeStyle: 0
+                });
+
+
+            if(sprite.type === 'image') {
+                sprite.setAttributes({
+                    src: '',
+                });
+            }
+        }
+
+    }
+
+    });
+});
+
+
+</script>
+</body>
+</html>
