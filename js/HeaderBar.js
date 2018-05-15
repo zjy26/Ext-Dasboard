@@ -7,7 +7,7 @@ var HeaderBar = Ext.create({
         xtype: 'component',
         itemId: 'logo',
         cls: 'sencha-logo',
-        html: '<div class="logo"><img src="company-logo.png">Sencha</div>',
+        html: '<div class="logo"><img src="images/company-logo.png">Sencha</div>',
         width: 250
     }, {
         margin: '0 0 0 8',
@@ -46,16 +46,7 @@ var HeaderBar = Ext.create({
             tooltip: 'Switch to modern toolkit'
         }]
     }, {
-        iconCls: 'x-fa fa-user',
-        handler: function() {
-            Ext.create('Ext.window.Window', {
-                monitorResize: false,
-                items: [{
-                    xtype: 'widget-c',
-                    width: 500
-                }]
-            });
-        }
+        iconCls: 'x-fa fa-user'
     }, {
         iconCls: 'x-fa fa-edit',
         handler: function(){
@@ -137,7 +128,7 @@ var HeaderBar = Ext.create({
                             height: 100,
                             autoEl: {
                                 tag: 'img',
-                                src: 'profile.png'
+                                src: 'images/profile.png'
                             }
                         }, {
                             xtype: 'filefield',
